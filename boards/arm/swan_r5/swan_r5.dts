@@ -11,7 +11,7 @@
 
 / {
 	model = "Blues Wireless Swan board";
-	compatible = "st,stm32l4r5zi-nucleo";
+	compatible = "blues,swan-r5";
 
 	chosen {
 		zephyr,console = &lpuart1;
