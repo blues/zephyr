@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 Pushpal Sidhu
+ * Copyright (c) 2022 Brandon Satrom
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -7,7 +7,7 @@
 /dts-v1/;
 #include <st/l4/stm32l4r5Xi.dtsi>
 #include <st/l4/stm32l4r5z(g-i)tx-pinctrl.dtsi>
-#include "arduino_r3_connector.dtsi"
+// #include "feather_connector.dtsi"
 
 / {
 	model = "Blues Wireless Swan board";
@@ -22,8 +22,8 @@
 
 	leds {
 		compatible = "gpio-leds";
-		red_led_0: led_0 {
-			gpios = <&gpiob PE2 GPIO_ACTIVE_HIGH>;
+		led0: led_0 {
+			gpios = <&gpioe 2 GPIO_ACTIVE_HIGH>;
 			label = "User LD1";
 		};
 	};
@@ -37,7 +37,7 @@
 	};
 
 	aliases {
-		led0 = &red_led_0;
+		led0 = &led0;
 		sw0 = &user_button;
 	};
 };
