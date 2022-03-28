@@ -1,6 +1,6 @@
 # Blues Wireless Swan board configuration
 
-# Copyright (c) 2022 Brandon Satrom
+# Copyright (c) 2022 Blues Inc.
 # SPDX-License-Identifier: Apache-2.0
 
 if BOARD_SWAN_R5

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Richard Osterloh <richard.osterloh@gmail.com>
+ * Copyright (c) 2022 Blues Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -16,9 +16,9 @@
 				<3 0 &gpioc 1 0>,	/* A3 */
 				<4 0 &gpioc 4 0>,	/* A4 */
 				<5 0 &gpioc 5 0>,	/* A5 */
-				<6 0 &gpiod 1 0>,	/* SCK */
-				<7 0 &gpiob 15 0>,	/* MOSI */
-				<8 0 &gpiob 14 0>,	/* MISO */
+				<6 0 &gpioa 5 0>,	/* SCK */
+				<7 0 &gpioa 7 0>,	/* MOSI */
+				<8 0 &gpioa 6 0>,	/* MISO */
 				<9 0 &gpioa 10 0>,	/* RX */
 				<10 0 &gpioa 9 0>,	/* TX */
 				<11 0 &gpioe 3 0>,	/* D4 */
