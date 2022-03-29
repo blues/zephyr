@@ -20,12 +20,13 @@ static int board_swan_init(const struct device *dev)
     GPIO_InitStruct.Pin = GPIO_PIN_6;
     HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);
+å
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pin = GPIO_PIN_4;
     HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
 
-	return 0;
+    return 0;
 }
 
 SYS_INIT(board_swan_init, PRE_KERNEL_1,
